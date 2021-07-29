@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def f(x):
-    return x**3
+    return x**2 - 16
 
 def df(x, dx=1/1000000000):
     return (f(x+dx) - f(x))/dx
@@ -36,5 +36,6 @@ ansx = root()
 print(ansx)
 plt.scatter(ansx, m*ansx + c)
 
+plt.grid()
 plt.show()
 

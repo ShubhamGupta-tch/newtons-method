@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import string
 
 def hash_str(string):
@@ -7,8 +5,11 @@ def hash_str(string):
     ascii_nums = []
 
     for i, s in enumerate(string):
-        ascii_nums.append(ord(s)*(const**i))
+        hashcode = ord(s)*(const**i) + ord(s)**(const*i)
+        # hashcode = ord(s)*(const**i)
+        ascii_nums.append(hashcode)
 
     return sum(ascii_nums)
 
-print(hash_str("abcde"))
+if __name__ == "__main__":
+    print(hash_str("nice"))

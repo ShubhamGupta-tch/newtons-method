@@ -9,7 +9,7 @@ space = 1
 mins = []
 maxs = []
 
-for i in range(1, 200):
+for i in range(1, 50):
     minx = 48*(2**i - 1) + sum([(48**2)**p for p in range(i)])
     maxx = 122*(2**i - 1)+ sum([(122**2)**p for p in range(i)])
 

@@ -12,4 +12,4 @@ def hash_str(string):
     return sum(ascii_nums)
 
 if __name__ == "__main__":
-    print(hash_str("nice"))
+    print(hash_str("cat"))
